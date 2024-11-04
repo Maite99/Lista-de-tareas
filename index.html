@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>LISTA DE TAREAS</h1>
+        <div class="caja-tareas">
+            <input type="text" class="tarea" placeholder="¿Qué hay que hacer?" id="tarea">
+            <button id="btn-agregar" class="btn-agregar" >Agregar</button>
+        </div>
+        <div class="lista" id="lista-tareas">
+            <div class="item-tarea">
+                <input type="checkbox"> <span>Aprender HTML</span>
+                <div class="btn-tarea">
+                    <button onclick="editarTarea(this)">✏️</button>
+                    <button onclick="eliminarTarea(this)">🗑️</button>
+                </div>
+            </div>
+            <div class="item-tarea">
+                <input type="checkbox"> <span>Aprender CSS</span>
+                <div class="btn-tarea">
+                    <button onclick="editarTarea(this)">✏️</button>
+                    <button onclick="eliminarTarea(this)">🗑️</button>
+                </div>
+            </div>
+            <div class="item-tarea">
+                <input type="checkbox"> <span>Aprender Javascript</span>
+                <div class="btn-tarea">
+                    <button onclick="editarTarea(this)">✏️</button>
+                    <button onclick="eliminarTarea(this)">🗑️</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
