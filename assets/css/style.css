@@ -1,23 +1,23 @@
-
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7%;
 }
 
-.contenedor{
-  border: 6px solid #f6f6f6;
-  width: 50%;
-  border-radius: 15px;
-  padding: 1% 4%;
-  text-align: center;
+.contenedor {
+    border: 6px solid #f6f6f6;
+    width: 50%;
+    border-radius: 15px;
+    padding: 1% 4%;
+    text-align: center;
 }
 
-.tarea{
+.tarea {
     width: 50%;
     height: 40px;
     border-radius: 20px;
@@ -25,11 +25,11 @@ body{
     padding: 3px;
 }
 
-.tarea:focus{
+.tarea:focus {
     outline-color: #00b4d3;
 }
 
-.btn-agregar{
+.btn-agregar {
     width: 15%;
     height: 40px;
     border-radius: 20px;
@@ -38,15 +38,15 @@ body{
     background-color: #00b4d3;
     color: white;
 }
-.btn-agregar:hover{
+
+.btn-agregar:hover {
     filter: brightness(0.9);
 }
 
-
-.lista{
+.lista {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin-top: 2%;
     margin-bottom: 5%;
     width: 100%;
@@ -54,21 +54,19 @@ body{
 
 .item-tarea {
     display: flex;
-    align-items: center; 
+    align-items: center;
     width: 65%;
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
 .item-tarea input[type="checkbox"]:checked + span {
-    text-decoration: line-through; 
-    color: gray; 
+    text-decoration: line-through;
+    color: gray;
 }
-
 
 .btn-tarea {
     display: flex;
     margin-left: auto;
-    
 }
 
 .btn-tarea button {
@@ -78,12 +76,10 @@ body{
     font-size: 1.2em;
 }
 
-
-
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .contenedor {
-        width: 80%;
+        width: 70%;
         padding: 2% 5%;
     }
 
@@ -95,6 +91,26 @@ body{
     .btn-agregar {
         width: 25%;
         height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+
+    .tarea {
+        width: 80%;
+        height: 35px;
+    }
+
+    .btn-agregar {
+        width: 30%;
+        height: 35px;
+    }
+
+    .item-tarea {
+        width: 80%;
     }
 }
 
@@ -113,9 +129,15 @@ body{
         width: 100%;
     }
 
-    .caja-tareas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .lista {
+        width: 100%;
+    }
+
+    .item-tarea {
+        width: 100%;
+    }
+
+    .btn-tarea button {
+        font-size: 1em;
     }
 }
